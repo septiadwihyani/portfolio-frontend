@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web Septia Dwi H</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="#">SEPTIA DWI HANDAYANI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="home container">
+        <div class="row d-flex align-items-center">
+            <div class="col-8">
+                <h3 class="fw-semibold">Hi! I'm</h3>
+                <h1 class="fw-bold">Septia Dwi Handayani</h1>
+                <p><b>Software Engineer</b> based in <b>Indonesia</b></p>
+                <a class="btn button" href="file/CV ATS SEPTIA.pdf" download>Resume</a>
+            </div>
+            <div class="col-4">
+                <img src="img/pas-photo.png" alt="Potrait">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about container">
+        <div class="title-about">
+            <h1>ABOUT ME</h1>
+            <div class="img-dot">
+                <img src="img/dot.png" alt="">
+            </div>
+        </div>
+        <div class="row" id="row-about">
+            <div class="col-sm">
+                <h4 class="title-section-intro">Introduction</h4>
+                <p>
+                    Student at Jakarta State University, Informatics and Computer Engineering Education. 
+                    Enthusiastic with extracting meaningful insight from <b>data</b> and <b>software development</b>. 
+                    Possess strong capabilities in <b>leadership, communication, teamwork, attention to detail,</b> and <b>rapid adaptation to new concepts</b>. 
+                    Throughout my academic tenure, I engaged in <b>website creation endeavors</b>, encompassing tasks such as formulating UML diagrams, crafting user interfaces, and configuring system settings.
+                </p>
+            </div>
+            <div class="col-sm">
+                <h4 class="title-section-skill">My Skills</h4>
+                <div class="btn-skill-list-item">
+                    <div class="btn-skill-item">
+                        <button class="btn btn-primary" type="button" onclick="toggleDetail(event)">HTML/CSS</button>
+                    </div>
+                    <p class="btn-detail">Course Coding Studio: Fundamental Front-End Web Development</p>
+                </div>
+                <div class="btn-skill-list-item">
+                    <div class="btn-skill-item">
+                        <button class="btn btn-primary" type="button" onclick="toggleDetail(event)">Javascript</button>
+                    </div>
+                    <p class="btn-detail">Course Coding Studio: Fundamental Front-End Web Development</p>
+                </div>
+                <div class="btn-skill-list-item">
+                    <div class="btn-skill-item">
+                        <button class="btn btn-primary" type="button" onclick="toggleDetail(event)">PHP</button>
+                    </div>
+                    <p class="btn-detail">Course Coding Studio: Mahir Membuat Web Dengan Laravel 9</p>
+                </div>
+                <div class="btn-skill-list-item">
+                    <div class="btn-skill-item">
+                        <button class="btn btn-primary" type="button" onclick="toggleDetail(event)">SQL</button>
+                    </div>
+                    <p class="btn-detail">Course Coding Studio: Mahir Membuat DB Aplikasi Profesional</p>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section id="projects" class="projects container">
+        <div class="title-projects">
+            <h1>MY PROJECTS</h1>
+            <div class="img-dot">
+                <img src="img/dot.png" alt="">
+            </div>
+        </div>
+        <div class="row" id="row-project1">
+            <div class="col-sm-6 col-md-5 col-lg-6">
+                <img src="img/web-perpus.png" alt="" class="img-hover">
+                <div class="img-title">Web Library</div>
+            </div>
+            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                <h5>Development of a Web-based Library Information System using SLiMS 9 (Bulian) and WhatsApp Gateway at SMK Negeri 40 Jakarta</h5>
+                <p>This library web was created to overcome difficulties in managing administration and delays in returning collections with Whatsapp notifications.</p>
+            </div>
+        </div>
+        <div class="row" id="row-project2">
+            <div class="col-sm-6 col-md-5 col-lg-6">
+                <img src="img/web-portfolio.png" alt="" class="img-hover">
+                <div class="img-title">Web Portfolio</div>
+            </div>
+            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                <h5>Front-End Web Portfolio Septia Dwi Handayani</h5>
+                <p>This front-end web portfolio was created to provide work or project documentation and information about Septia Dwi Handayani.</p>         
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact container">
+        <div class="title-contact">
+            <h1>CONTACT ME</h1>
+            <div class="img-dot">
+                <img src="img/dot.png" alt="">
+            </div>
+        </div>
+        <div class="contact-item">
+            <div class="about-social">
+                <h5 class="sub-title">Get in Touch</h5>
+                <div class="social-item">
+                    <div class="social-list-item">
+                        <a href="https://www.instagram.com/septia.dwh/"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="https://www.youtube.com/@septiadwihandayani1816"><i class='bx bxl-youtube' ></i></a>
+                        <a href="https://www.linkedin.com/in/septiadwihandayani/"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/septiadwihyani"><i class='bx bxl-github' ></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="massage">
+                <h5 class="sub-title">Feel free to Contact me by submitting the form</h5>
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputSubject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="exampleInputSubject" placeholder="Enter your subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputMassage" class="form-label">Massage</label>
+                        <textarea name="" id="exampleInputMassage" class="form-control" cols="7" rows="3" placeholder="Enter your massage"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            © Copyright 2023. Made by Septia Dwi Handayani
+        </p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
